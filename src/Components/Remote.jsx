@@ -1,34 +1,19 @@
+import { useState } from "react"
+import {data2} from "./remotejob"
 import task from "./Component.module.css"
 import { Icon, search, Stack } from '@chakra-ui/react'
 import { ChevronLeftIcon ,ChevronRightIcon} from '@chakra-ui/icons'
-// import { MdSettings } from 'react-icons/md'
-import { data } from "./earlydata.js"
-import { useState } from "react"
-import { useEffect } from "react"
 
+export default function Remote()
+{
+const [data,setData] = useState(data2)
 
-const datas = data
-
-export default function EarlyApplicant() {
-
-    const [data, setData] = useState(datas)
-    const [page, setPage] = useState(0)
-    const [index, setIndex] = useState(0)
-
-
-    useEffect(() => {
-
-
-    }, [])
-
-    // console.log(data)
-
-    return (
+console.log(data)
+    return(
         <div>
+<div style={{ fontSize: "32px", fontWeight: "700", marginTop: "20px", marginBottom: "20px" }}><h2>Remote Jobs</h2></div>
 
-            <div style={{ fontSize: "32px", fontWeight: "700", marginTop: "20px", marginBottom: "20px" }}><h2>Be An Early Applicant</h2></div>
-
-            <div className={task.detail}>
+<div className={task.detail}>
                 <Stack isInline> <div className={task.prev}><button style={{justifyContent:"center",alignItems:"center"}}><ChevronLeftIcon/></button></div></Stack>
 
                 <div style={{ display: "flex", gap: "1rem",margin:"auto" }}>
@@ -77,6 +62,7 @@ export default function EarlyApplicant() {
 
 
             </div>
+
 
         </div>
     )
