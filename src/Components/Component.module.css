@@ -2,7 +2,8 @@
 .head{
     width:100%;
     height: 50px;
-    border:1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px; */
     background-color: rgb(236, 236, 236);
    
 }
@@ -14,6 +15,9 @@
     margin-right: 30px;
     margin-top: 10px;
 } 
+.headcont>div{
+    margin-top: 11px;
+}
 
 
 /* second box */
@@ -22,7 +26,7 @@
 .head2{
     width:100%;
     height: 65px;
-    border:1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 .headcont2{
     display:flex;
@@ -32,8 +36,14 @@
     margin-right: 30px;
     margin-top: -32px;
 }
+.headcont2>div{
+    margin-top: -12px;
+}
 .btn1{
-    background-color: violet;
+    background-color: rgb(4, 66, 223);
+    padding: 8px;
+    border-radius: 4px;
+
 }
 /* ip{
 
@@ -43,7 +53,7 @@
 .head3{
     width:100%;
     height: 50px;
-    border:1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
     /* display: flex;
     gap:1.25rem;
     */
@@ -87,6 +97,9 @@
 
 
 /* earlyApplicant */
+.hd{
+    font-weight: 800;
+}
 
 .pic1{
 
@@ -98,21 +111,30 @@
 
 }
 .next{
-    width:40px;
-    height: 200px;
+    width:60px;
+    height: 50px;
     border:1px solid black;
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
+   
 }
 .prev{
-    width:40px;
-    height: 200px;
+    width:60px;
+    height: 50px;
     border:1px solid black;
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
 }
 .detail{
-    width:100%;
+    width:80%;
     height: 200px;
     border:1px solid red;
     display: flex;
     box-sizing: border-box;
+    margin: auto;
+    flex-shrink: 0;
     /* display: flex; */
 }
 /* .detail>div{
