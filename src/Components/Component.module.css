@@ -1,0 +1,141 @@
+/* first box */
+.head{
+    width:100%;
+    height: 50px;
+    border:1px solid black;
+    background-color: rgb(236, 236, 236);
+   
+}
+ .headcont{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap:2rem;
+    margin-right: 30px;
+    margin-top: 10px;
+} 
+
+
+/* second box */
+
+
+.head2{
+    width:100%;
+    height: 65px;
+    border:1px solid black;
+}
+.headcont2{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap:2rem;
+    margin-right: 30px;
+    margin-top: -32px;
+}
+.btn1{
+    background-color: violet;
+}
+/* ip{
+
+} */
+/* header 3 */
+
+.head3{
+    width:100%;
+    height: 50px;
+    border:1px solid black;
+    /* display: flex;
+    gap:1.25rem;
+    */
+}
+.place{
+    display: flex;
+    gap:1.25rem;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+/* slide */
+
+/* .slide{
+    width:100%;
+    height:100px;
+    border:1px solid black;
+} */
+.slide{
+    margin: 0px;
+    padding: 0px;
+    height: 400px;
+    width:100%;
+    background-image: url("https://www.shine.com/next/static/images/hackathon/Desktop_hackathon.png");
+    background-size: 100% 100%;
+    animation: changeImage 10s linear infinite ;
+}
+@keyframes changeImage {
+    0%{
+        background-image: url("https://www.shine.com/next/static/images/hackathon/Desktop_hackathon.png");
+    }
+    33.33%{
+        background-image: url("https://www.shine.com/next/static/images/hackathon/Hackathon_2nd_pos_desktop.png");
+    }
+    66.66%{
+        background-image: url("https://www.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fc%2Fs1%2Fimages%2Fcandidate%2Fbanner%2Fwinter_d_home.png&w=640&q=75");
+    }
+    100%{
+        background-image: url("https://www.shine.com/next/static/images/hackathon/Desktop_hackathon.png");
+    }
+}
+
+
+/* earlyApplicant */
+
+.pic1{
+
+    width:100%;
+    height: 150px;
+    border:1px solid black;
+    display: flex;
+    
+
+}
+.next{
+    width:40px;
+    height: 200px;
+    border:1px solid black;
+}
+.prev{
+    width:40px;
+    height: 200px;
+    border:1px solid black;
+}
+.detail{
+    width:100%;
+    height: 200px;
+    border:1px solid red;
+    display: flex;
+    box-sizing: border-box;
+    /* display: flex; */
+}
+/* .detail>div{
+    width:31%;
+    height: 98%;
+    border:1px solid black;
+    margin: auto;
+} */
+/* .detail>img{
+width:100px;
+} */
+.box{
+    width:400px;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-sizing: border-box;
+    width: fit-content;
+    block-size: fit-content;
+
+}
+.btn2{
+color: rgb(99, 26, 244);
+margin-left: 90px;
+font-weight: 500;
+
+}
