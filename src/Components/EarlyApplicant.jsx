@@ -5,6 +5,9 @@ import { ChevronLeftIcon ,ChevronRightIcon} from '@chakra-ui/icons'
 import { data } from "./earlydata.js"
 import { useState } from "react"
 import { useEffect } from "react"
+import { Link, Navigate, useNavigate } from "react-router-dom"
+
+
 
 
 const datas = data
@@ -14,7 +17,7 @@ export default function EarlyApplicant() {
     const [data, setData] = useState(datas)
     const [page, setPage] = useState(0)
     const [index, setIndex] = useState(0)
-
+const navigate = useNavigate()
 
     useEffect(() => {
 
@@ -33,7 +36,7 @@ export default function EarlyApplicant() {
 
                 <div style={{ display: "flex", gap: "1rem",margin:"auto" }}>
                     {data?.map((el) => (
-                        <div key={el.id} className={task.box}>
+                        <div key={el.id} className={task.box} onClick={(<Link to={"/Work1"}></Link>)}>
 
                             <div style={{ display: "flex" }}>
                                 <span >{el.head}</span>

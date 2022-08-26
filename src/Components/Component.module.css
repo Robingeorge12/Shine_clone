@@ -135,6 +135,9 @@
     box-sizing: border-box;
     margin: auto;
     flex-shrink: 0;
+    box-sizing: border-box
+    ;
+    /* overflow-wrap:break-word; */
     /* display: flex; */
 }
 /* .detail>div{
@@ -147,13 +150,16 @@
 width:100px;
 } */
 .box{
-    width:400px;
+    width:300px;
     height: 200px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid black;
     box-sizing: border-box;
     width: fit-content;
     block-size: fit-content;
-
+    overflow-wrap:break-word;
+    white-space: normal;
+    box-sizing: border-box;
+/* gap: "1rem"; */
 }
 .btn2{
 color: rgb(99, 26, 244);
@@ -161,3 +167,75 @@ margin-left: 90px;
 font-weight: 500;
 
 }
+
+/* footer */
+
+.footer{
+
+    display: flex;
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 30px;
+    background-color: aliceblue;
+
+}
+.footer1{
+    display: flex;
+    width: 80%;
+    height: 280px;
+    border: 1px solid black;
+    margin: auto;
+}
+.footer1>div{
+    margin: auto;
+    /* gap:.5rem; */
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 18%;
+    height: 250px;
+    border: 1px solid rgb(210, 28, 28);
+}
+.anc>h5{
+    color:rgb(134,82,255);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.anc2>h5{
+    color:rgb(134,82,255);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* carousel */
+.cr1{
+
+    display: flex;
+    width:90%;
+    height: 250px;
+    border: 1px solid black;  
+    margin: auto;
+}
+
+.box1{
+    margin: auto;
+    width:400px;
+    height: 200px;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    width: fit-content;
+    block-size: fit-content;
+    overflow-wrap:break-word;
+    white-space: normal;
+    box-sizing: border-box;
+    /* background-color: rgb(29, 206, 147);
+     */
+/* gap: "1rem"; */
+}
+.slick-arrow{
+    background-color: rgb(29, 206, 147);
+    width :100px;
+    height: 50px;
+    color:black;
+    }

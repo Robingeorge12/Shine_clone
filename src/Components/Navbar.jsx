@@ -7,7 +7,14 @@ import EarlyApplicant from "./EarlyApplicant"
 import Remote from "./Remote"
 import Walk from "./Walk"
 import { Search2Icon} from '@chakra-ui/icons'
+import Footer from "./Footer"
+import CarouselSlide from "./CarouselSlide"
+import CarRemote from "./CarRemote"
+import CarWalk from "./CarWalk"
+import First from "../Detail/First"
 
+
+// IoNotificationsOutline
 // Search2Icon
 export default function Navbar()
 {
@@ -95,11 +102,17 @@ const navigate = useNavigate()
 </div>
 <div><TopSlide /></div>
  
-<EarlyApplicant />
+<CarouselSlide />
+{/* <EarlyApplicant /> */}
+<CarRemote />
+{/* <Remote /> */}
 
-<Remote />
+<CarWalk />
+{/* <Walk /> */}
+<Footer />
 
-<Walk />
+{/* <First />
+<First /> */}
         </div>
     )
 }
