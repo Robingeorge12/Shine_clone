@@ -37,7 +37,7 @@ export default function Reg() {
     e.preventDefault()
     // localarr.push(data)
     localStorage.setItem("userdetails", JSON.stringify(data))
-    setData({ username: "", email: "", phone: "", password: "", id: "" })
+    setData({ username: "", email: "", password: "", id: "" })
     navigate("/login")
   }
   return (

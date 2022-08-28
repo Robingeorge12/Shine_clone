@@ -49,12 +49,12 @@ export default function CarouselSlide() {
 
       {/* <div><First /></div> */}
 
-      <div style={{ fontSize: "32px", fontWeight: "700", marginTop: "20px", marginBottom: "20px" }} className="slick-slide"><h2>Be An Early Applicant</h2></div>
+      <div style={{ fontSize: "32px", fontWeight: "700",  marginTop: "20px" }}><h2>Be An Early Applicant</h2></div>
 
       <Slider {...settings}>
         {/* <div style={{ display: "flex", gap: "1rem",margin:"auto" }}> */}
         {data?.map((el) => (
-          <Stack borderRightRadius="20" marginTop={20} rounded="lg" key={el.id}>
+          <Stack borderRightRadius="20" marginTop={8} rounded="lg" key={el.id}>
           <div className={task.cr1} >
 
             <div className={task.box1} onClick={() => Adddata(el)}>
