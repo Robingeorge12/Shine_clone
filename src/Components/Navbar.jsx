@@ -86,7 +86,7 @@ const navigate = useNavigate()
 <div className={task.head3}>
     <div className={task.place}>
             <div>
-                <Link to="/home">HOME</Link>
+                <Link to="/">HOME</Link>
             </div>
             <div>
             <Link to="/jobs">JOBS</Link> 
