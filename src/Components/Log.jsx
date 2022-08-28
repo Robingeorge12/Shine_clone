@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 import { useState } from 'react';
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
@@ -19,11 +19,13 @@ import {
   useColorModeValue,
   Link,
 } from '@chakra-ui/react';
+import { AppContext } from '../Context/AppContext';
 
 
 export default function Log() {
   const [showPassword, setShowPassword] = useState(false);
   const [data, setData] = useState({ email: "", password: "" })
+  const {isAuth,toggleAuth} = useContext(AppContext)
   const navigate = useNavigate()
   const parseddata = JSON.parse(localStorage.getItem("userdetails")) || {}
   const handleInput = (e) => {
@@ -40,8 +42,12 @@ export default function Log() {
     else if (parseddata.email === data.email && parseddata.password === data.password) {
       // alert("fetching data")
       setTimeout(() => {
+
+        toggleAuth()
         alert("Login Suceessful")
+
         navigate("/")
+
       }, 100);
     }
     setData({ email: "", password: "" })
@@ -123,6 +129,7 @@ export default function Log() {
         </Box>
       </Stack>
     </Flex>
+
 
 
   )

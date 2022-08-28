@@ -10,6 +10,7 @@ import Work from "./Work";
 import Reg from "../Components/Reg";
 import Log from "../Components/Log";
 import Second from "../Components/Second";
+import Private from "../Components/private";
 
 export default function AllRoutes()
 {
@@ -23,12 +24,12 @@ export default function AllRoutes()
     <Route path={"/jobseeking"} element={<JobSeeks />} />
     <Route path={"/courses"} element={<Course />} />
     <Route path={"/career"} element={<Career />} />
-    <Route path={"/blog"} element={<Blog />} />
+    {/* <Route path={"/log"} element={<Log />} /> */}
     <Route path={"/work"} element={<Work />} />
     <Route path={"/register"} element={<Reg/>} />
     <Route path={"/login"} element={<Log />} />
-    <Route path={"/first"} element={<First />} />
-    <Route path={"/second"} element={<Second />} />
+    <Route path={"/first"} element={<Private><First /></Private>} />
+    <Route path={"/second"} element={<Private><Second /></Private>} />
 
 </Routes>
 

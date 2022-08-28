@@ -33,8 +33,8 @@ export default function CarWalks() {
       <Slider {...settings} style={{ gap: "1rem" }}>
         {/* <div style={{ display: "flex", gap: "1rem",margin:"auto" }}> */}
         {data?.map((el) => (
-          <Stack>
-          <div className={task.cr1} key={el.id} >
+          <Stack key={el.id} >
+          <div className={task.cr1} >
 
             <div className={task.box1}>
 

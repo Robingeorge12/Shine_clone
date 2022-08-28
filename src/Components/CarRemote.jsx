@@ -15,7 +15,7 @@ import { Stack } from "@chakra-ui/react";
 
 export default function CarRemote() {
   const [data, setData] = useState(data2)
-
+  const { state, setState } = useContext(AppContext)
   const [add, setAdd] = useState({})
   const navigate = useNavigate()
   const { state2, setState2} = useContext(AppContext)
@@ -40,11 +40,11 @@ export default function CarRemote() {
     <div>
       <div style={{ fontSize: "32px", fontWeight: "700", marginTop: "20px", marginBottom: "20px" }}><h2>Remote Jobs</h2></div>
 
-      <Slider {...settings} style={{ gap: "1rem" }}>
+      <Slider {...settings} style={{ gap: "1rem" }} >
         {/* <div style={{ display: "flex", gap: "1rem",margin:"auto" }}> */}
         {data?.map((el) => (
-          <Stack>
-          <div className={task.cr1} key={el.id}>
+          <Stack key={el.id}>
+          <div className={task.cr1} >
 
             <div className={task.box1} onClick={() => Adddata(el)}>
 
