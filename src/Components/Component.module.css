@@ -20,6 +20,7 @@
 }
 
 
+
 /* second box */
 
 
@@ -40,7 +41,7 @@
     margin-top: -12px;
 }
 .btn1{
-    background-color: rgb(4, 66, 223);
+    background-color:rgb(134,82,255);
     padding: 8px;
     border-radius: 4px;
 
@@ -99,6 +100,7 @@
 /* earlyApplicant */
 .hd{
     font-weight: 800;
+    margin-left: -170px;
 }
 
 .pic1{
@@ -175,7 +177,7 @@ font-weight: 500;
     display: flex;
     width: 100%;
     height: 300px;
-    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     margin: auto;
     margin-top: 30px;
     background-color: aliceblue;
@@ -185,7 +187,7 @@ font-weight: 500;
     display: flex;
     width: 80%;
     height: 280px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: auto;
 }
 .footer1>div{
@@ -195,7 +197,7 @@ font-weight: 500;
     margin-right: 20px;
     width: 18%;
     height: 250px;
-    border: 1px solid rgb(210, 28, 28);
+    /* border: 1px solid rgb(210, 28, 28); */
 }
 .anc>h5{
     color:rgb(134,82,255);
@@ -239,3 +241,146 @@ font-weight: 500;
     height: 50px;
     color:black;
     }
+
+    /* first */
+
+    .cont{
+
+        width :60%;
+        height: 500px;
+        border:1px solid black;
+    }
+  
+    .para{
+
+        display: flex;
+        flex-direction: column;
+        border: 1px solid green;
+        width: 400px;
+        height:auto;
+    }
+    /* .slick-prev{
+        width: 50px;
+        height: 50px;
+        color: aquamarine;
+        background-color: black;
+
+    } */
+
+
+    element.style {
+        display: block;
+    }
+    .slick-prev {
+        left:25px;
+    }
+    .slick-prev, .slick-next {
+        font-size: 0;
+        line-height: 0;
+        position: absolute;
+        top: 50%;
+        display: block;
+        width: 50px;
+        height: 50px;
+        padding: 20px;
+        transform: translate(0, -50%);
+        cursor: pointer;
+        color: red;
+        border: none;
+        outline: none;
+        background: black;
+    }
+    
+element.style {
+    display: block;
+}
+.slick-next {
+    right: 25px;
+}
+/* .slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+} */
+
+.tr>h3{
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+background-color: blue;
+}
+.a{
+
+    margin-left: 20px;
+    width: 50%;
+    height: 50px;
+    /* border: 1px solid black; */
+    display: flex;
+    gap:2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+  
+ 
+
+}
+.a>div{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.divbox{
+    margin-left: 20px;
+    width :50%;
+    height: auto;
+    /* text-align: ; */
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    border: 1px solid black;
+    margin-bottom: 20px;
+    background: rgb(139, 206, 206);
+}
+.pa{
+margin-left: 20px;
+    width :50%;
+    height: auto; 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
+    margin-top: 20px;
+}
+/* .dl{
+    width :50%;
+    height: auto; 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
+    margin-top: 20px;
+
+} */
+.hov:hover{
+
+    transform: scale(2);
+    transition-duration: 0.5s;
+    opacity: 0.5;
+    /* background-color: aqua; */
+    border-radius: 30%;
+}
+
+.slick-slide {
+    margin: 0 10px;
+  }
+  .slick-list {
+    margin: 0 -10px;
+  }
+ 
+  .slick-slide {
+    margin: 0 10px;
+  }
+  .slick-list {
+    margin: 0 -10px;
+  }

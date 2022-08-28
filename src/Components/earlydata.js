@@ -43,7 +43,7 @@ export const data = [
     head:"Hot",
     day:"0 day ago",
     pos:"Manager ,Capaign Operations (L 09)",
-    com:"Synchrony International",
+    com:"Synchrony Int",
     img1:"u",
     img2:"t",
     ex:" 3 to 7 years",

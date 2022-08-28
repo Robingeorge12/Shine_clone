@@ -1,37 +1,74 @@
 import { Box, LightMode } from "@chakra-ui/react"
-import { useContext ,useState} from "react"
+import { useContext, useState } from "react"
 import { Link } from "react-router-dom"
 import { AppContext } from "../Context/AppContext"
+import task from "./Component.module.css"
+import { IoLocation, IoBagHandleOutline } from "react-icons/io5";
 
 
 export default function First() {
+    const { state, setState } = useContext(AppContext)
+    const [data] = useState(state)
+    // console.log(data)
 
-    const {state,setState} = useContext(AppContext)
-    const [data]= useState(state)
-    console.log(data)
     return (
         <div>
-            <div className="cont">
-                <div className="el">
-                    {/* map */}
+
+            <div>
+
+                <div className={task.divbox} >
+                    <div>
+
+
+                        <div style={{ display: "flex" }}>
+                            <span >{state.head}</span>
+                            <div style={{ marginLeft: "580px" }}>{state.day}</div>
+                        </div>
+
+                        <div className={task.hd}>
+                            <h4>{state.pos}</h4>
+                        </div>
+
+                        <div>
+                            <h4>{state.com}</h4>
+                        </div>
+
+                        <div style={{ display: "flex" }}>
+                            <span style={{ display: "flex", gap: "1rem", marginTop: "5px", marginBottom: "5px" }}> <IoLocation />{state.cty} <IoBagHandleOutline />{state.ex} </span>
+                        </div>
+
+                        <div style={{ display: "flex", gap: "2rem",marginLeft:"5px" }}>
+                            <ul type="square" style={{marginLeft:"15px"}}> <li>{state.ft1}</li></ul>
+
+                            <ul type="square"> <li>{state.ft2}</li></ul>
+
+                        </div>
+
+                        <div>
+                            <button style={{marginLeft: "580px",fontWeight: "500",color:"blue"}}>Apply</button>
+                        </div>
+
+                    </div>
                 </div>
 
-                <div style={{ display: "flex", gap: "2rem" }}>
-                    <div><Link to="/">Job Details</Link></div>
-                    <div><Link >Key Skills</Link></div>
-                    <div> <Link>Recuiter Details</Link></div>
-                    <div> <Link>Company Details</Link></div>
+                <div className={task.a}>
+                    <div>Job Details</div>
+                    <div>Key Skills</div>
+                    <div> Recuiter Details</div>
+                    <div> Company Details</div>
 
 
                 </div>
 
 
-                <div className="det">
+                <div className={task.pa}>
+
+
                     <h4> Position's General Duties and Tasks</h4><br /><br />
                     <h4> In these roles you will  be responsible for</h4><br /><br />
 
                     <p> -Work with Architect to gather the technical details and requirements.</p>
-                    <p>-Write Reusable, Effective, as well as Scalable code and create front-end modules using React Native.</p>
+                    <p>-Write Reusable, Effective, as wstatel as Scalable code and create front-end modules using React Native.</p>
                     <p>-Integration with REST services in the application.</p>
                     <p>-Integration of third-party authentication services.</p>
                     <p>-Follow UI design, UI guidelines and coding guidelines to develop and deliver the applications</p>
@@ -53,8 +90,8 @@ export default function First() {
                     <p>-Experience/knowledge of other Java script frameworks like ReactJS, Angular and Flutter.</p>
                     <p>-Experience using Redux libraries like Redux-thunk and Redux-saga.</p>
                     <p>-Experience using process management tools like Atlassian JIRA.</p>
-                    <p>Required schedule availability for this position is Monday-Friday (09:00am to 06:00pm IST). The shift timings can be changed as per client requirements. Additionally, resources may have to do overtime and work on weekend s basis business requirement.</p></div>
-                <div><p><b> Job Segment:</b> Developer, Front End, Application Developer, User Experience, Java, Technology </p>
+                    <p>Required schedule availability for this position is Monday-Friday (09:00am to 06:00pm IST). The shift timings can be changed as per client requirements. Additionally, resources may have to do overtime and work on weekend s basis business requirement.</p>
+                <p><b> Job Segment:</b> Developer, Front End, Application Developer, User Experience, Java, Technology </p>
                     <div>
                         <h4>Other Details</h4>
                         <h4>Department  General / Other SoftwareWeb / Mobile Technologies</h4>
@@ -62,14 +99,11 @@ export default function First() {
                         <h4>Education Graduation </h4>
                     </div>
                 </div>
-                <div className="key">
-               
 
 
-                </div>
+
 
             </div>
         </div>
-
     )
 }
