@@ -54,7 +54,7 @@ export default function CarouselSlide() {
       <Slider {...settings}>
         {/* <div style={{ display: "flex", gap: "1rem",margin:"auto" }}> */}
         {data?.map((el) => (
-          <Stack borderRightRadius="20" marginTop={20}>
+          <Stack borderRightRadius="20" marginTop={20} rounded="lg">
           <div className={task.cr1} key={el.id}>
 
             <div className={task.box1} onClick={() => Adddata(el)}>
