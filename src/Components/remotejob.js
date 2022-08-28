@@ -11,8 +11,9 @@ export const data2=[
         ex:" 2 to 7 years",
         ft1:"Be an Early Applicant",
         ft2:"Regular",
-        vac:"8"
-
+        vac:8,
+        id:1
+        
     },
     {
         head:"Hot",
@@ -25,21 +26,24 @@ export const data2=[
         ex:" 0 to 2 years",
         ft1:"Be an Early Applicant",
         ft2:"Regular",
-        vac:"10"
+        vac:10,
+        id:2
+        
 
     },
     {
         head:"Hot",
         day:"0 day ago",
         pos:"Social Media Expert",
-        com:"Orcapod Consulting Service Pvt Ltd",
+        com:"    Orcapod Consulting Service Pvt Ltd",
         img1:"u",
         cty:"Noida",
         img2:"t",
         ex:" 1 to 3 years",
         ft1:"Be an Early Applicant",
         ft2:"Regular",
-        vac:"11"
+        vac:11,
+        id:3
 
     },
     {
@@ -53,7 +57,8 @@ export const data2=[
         ex:" 1 to 2 years",
         ft1:"Be an Early Applicant",
         ft2:"Regular",
-        vac:"10"
+        vac:10,
+        id:4
 
     },
     {
@@ -67,7 +72,8 @@ export const data2=[
         ex:" 2 to 5 years",
         ft1:"Be an Early Applicant",
         ft2:"Regular",
-        vac:"11"
+        vac:11,
+        id:5
 
     },
     

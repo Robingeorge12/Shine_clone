@@ -11,8 +11,9 @@ import task from "./Component.module.css"
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Stack } from "@chakra-ui/react";
 
-export default function CarWalk() {
+export default function CarWalks() {
   const [data, setData] = useState(data3)
 
   const settings = {
@@ -32,28 +33,29 @@ export default function CarWalk() {
       <Slider {...settings} style={{ gap: "1rem" }}>
         {/* <div style={{ display: "flex", gap: "1rem",margin:"auto" }}> */}
         {data?.map((el) => (
-          <div className={task.cr1} >
+          <Stack>
+          <div className={task.cr1} key={el.id} >
 
-            <div key={el.id} className={task.box1}>
+            <div className={task.box1}>
 
               <div style={{ display: "flex" }}>
                 <span >{el.head}</span>
-                <div style={{ marginLeft: "80px" }}>{el.day}</div>
+                <div style={{ marginLeft: "80px",marginLeft:"300px" }}>{el.day}</div>
               </div>
 
-              <div className={task.hd}>
+              <div style={{fontWeight:"800" ,marginLeft:"-20px"}}>
                 <h4>{el.pos}</h4>
               </div>
 
               <div>
-                <h4>{el.com}</h4>
+                <h4 style={{ marginLeft: "-80px" }}>{el.com}</h4>
               </div>
 
               <div style={{ display: "flex" }}>
-                <span style={{ display: "flex", gap: "1rem", marginTop: "5px", marginBottom: "5px" }}> <IoLocation />{el.cty} <IoBagHandleOutline />{el.ex} </span>
+                <span style={{ display: "flex", gap: "1rem", marginTop: "5px", marginBottom: "5px",marginLeft:"-0px" }}> <IoLocation />{el.cty} <IoBagHandleOutline />{el.ex} </span>
               </div>
 
-              <div style={{ display: "flex", gap: "2rem" }}>
+              <div style={{ display: "flex", gap: "2rem",marginLeft:"15px" }}>
                 <ul type="square"> <li>{el.ft1}</li></ul>
                 <ul type="square"> <li>{el.ft2}</li></ul>
               </div>
@@ -63,6 +65,7 @@ export default function CarWalk() {
               </div>
             </div>
           </div>
+          </Stack>
         ))
 
 

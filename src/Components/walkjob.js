@@ -12,12 +12,12 @@ export const data3 = [
         ft1: "Be an Early Applicant",
         ft2: "Regular",
         vac: "8",
-        id: "1"
+        id: 1
     },
     {
         head: "Hot",
         day: "0 day ago",
-        pos: "Web development using mysql,bootstrap,php,code ignitor",
+        pos: "Web development using mysql,bootstrap",
         com: "BIGWELT INFOTECH PRIVATE LIMITED",
         img1: "u",
         cty: "Visakapatnam",
@@ -26,7 +26,7 @@ export const data3 = [
         ft1: "Be an Early Applicant",
         ft2: "Regular",
         vac: "10",
-        id: "2"
+        id: 2
 
     },
     {
@@ -41,7 +41,7 @@ export const data3 = [
         ft1: "Be an Early Applicant",
         ft2: "Regular",
         vac: "10",
-        id: "3"
+        id: 3
     },
     {
         head: "Hot",
@@ -55,13 +55,13 @@ export const data3 = [
         ft1: "Be an Early Applicant",
         ft2: "Regular",
         vac: "9",
-        id: "4"
+        id: 4
     },
     {
         head: "Hot",
         day: "0 day ago",
-        pos: "WALK-IN Interview For Relationship Manager - Bank Channel - Chennai",
-        com: "OPTIMUM FUTURE Hiring For Leading Clients of Optimum Future",
+        pos: "WALK-IN Interview For Relationship Manager",
+        com: "OPTIMUM FUTURE Hiring For Clients",
         img1: "u",
         cty: "Chennai",
         img2: "t",
@@ -69,6 +69,6 @@ export const data3 = [
         ft1: "Be an Early Applicant",
         ft2: "Regular",
         vac: "02",
-        id: "5"
+        id: 5
     }
 ]
